@@ -1,8 +1,5 @@
 from gtts import gTTS
 import io
-import os
-from Secret_key import open_ai_key
-os.environ['OPENAI_API_KEY']=open_ai_key
 from langchain.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI  # ✅ New import
 from langchain_core.runnables import RunnableSequence
