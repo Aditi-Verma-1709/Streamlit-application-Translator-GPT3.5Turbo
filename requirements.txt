@@ -1,9 +1,0 @@
-streamlit
-langchain
-langchain-openai
-langchain-core
-langchain-community
-gtts
-pandas
-pdfplumber
-openai
