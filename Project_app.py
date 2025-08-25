@@ -3,7 +3,8 @@ import pdfplumber
 import pandas as pd
 from Project_app_utils import translator, audio_converter
 from langchain_community.document_loaders import TextLoader
-
+import os
+os.environ['OPENAI_API_KEY'] = st.secrets["OPENAI_API_KEY"]
 st.title('Translator')
 target_language=st.selectbox('Target Language ',('Hindi','Marathi','Spanish','Italian','English','Russian'))
 input_text=st.text_input('Type your text',key='input_text')
